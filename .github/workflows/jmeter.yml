@@ -42,7 +42,7 @@ jobs:
       # Step 4 - Run JMeter test
       - name: Run JMeter Script
         run: |
-          ./jmeter/bin/jmeter -n -t ${{ github.event.inputs.testfile || 'Git_demo.jmx' }} -l results.jtl -e -o html-report
+          ./jmeter/bin/jmeter -n -t ${{ github.event.inputs.testfile || 'Script.jmx' }} -l results.jtl -e -o html-report
  
       # Step 5 - Upload HTML Report
       - name: Upload JMeter Report
